@@ -5,7 +5,7 @@
 2. You can set certain attributes to only be within a certain range (Yay, options!)
 3. Creates interesting names
 4. Here's a snippet of my code:
-5. ```python
+   ```python
    first_letter = input('Enter the first letter of the names of your aliens here (Leave blank for a random starting letter): ')
    last_letter = input('Enter the last letter of the names of your aliens here: ')
    min_age = input('Enter a minimum age in years here (leave blank for a random minimum age): ')
@@ -19,5 +19,7 @@
    health = 0
    min_power = input('Enter a minimum power level here (leave blank for a random minimum power level): ')
    max_power = input('Enter a maximum power level here (leave blank for a random maximum power level): ')
-   power = 0
-```
+   power = 0```
+
+## Overview
+This program generates **10 alien NPCs**, with **names**, **ages**, **stamina levels**, **base health levels**, and **power levels**. The names are **mostly random**, but you can **select the first and last letters** that will be used in all 10 names.
