@@ -6,7 +6,7 @@
 3. Creates interesting names
 4. Here's a snippet of my code:
 5. ```python
-6. first_letter = input('Enter the first letter of the names of your aliens here (Leave blank for a random starting letter): ')
+   first_letter = input('Enter the first letter of the names of your aliens here (Leave blank for a random starting letter): ')
 last_letter = input('Enter the last letter of the names of your aliens here: ')
 min_age = input('Enter a minimum age in years here (leave blank for a random minimum age): ')
 max_age = input('Enter a maximum age in years here (leave blank for a random maximum age): ')
