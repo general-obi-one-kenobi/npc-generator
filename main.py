@@ -74,20 +74,20 @@ for i in range(1,11):
     # This is the code for the stamina
     
     if min_stamina is not ' ' or max_stamina is not ' ':
-        min_stamina = float(min_stamina)
-        max_stamina = float(max_stamina)
+        min_stamina = int(min_stamina)
+        max_stamina = int(max_stamina)
         if min_stamina <= max_stamina:
             stamina = random.randint(min_stamina,max_stamina)
         else:
             print('Invalid stamina level range. Setting stamina level to random value.')
             stamina = random.randint()
     elif min_stamina is not ' ' and max_stamina is ' ':
-        min_stamina = float(min_stamina)
-        max_stamina = float(max_stamina)
+        min_stamina = int(min_stamina)
+        max_stamina = int(max_stamina)
         stamina = random.randint(min_stamina, )
     elif min_stamina is ' ' and max_stamina is not ' ':
-        min_stamina = float(min_stamina)
-        max_stamina = float(max_stamina)
+        min_stamina = int(min_stamina)
+        max_stamina = int(max_stamina)
         stamina = random.randint(0,max_stamina)
     else:
         stamina = random.randint()
@@ -95,20 +95,20 @@ for i in range(1,11):
     
     #This is the code for the health
     if min_health is not ' ' or max_health is not ' ':
-        min_health = float(min_health)
-        max_health = float(max_health)
+        min_health = int(min_health)
+        max_health = int(max_health)
         if min_health <= max_health:
             health = random.randint(min_health,max_health)
         else:
             print('Invalid health range. Setting health to random value.')
             health = random.randint()
     elif min_health is not ' ' and max_health is ' ':
-        min_health = float(min_health)
-        max_health = float(max_health)
+        min_health = int(min_health)
+        max_health = int(max_health)
         health = random.randint(min_health, )
     elif max_health is ' ' and max_health is not ' ':
-        min_health = float(max_health)
-        max_health = float(max_health)
+        min_health = int(max_health)
+        max_health = int(max_health)
         health = random.randint(0,max_health)
     else:
         health = random.randint()
@@ -116,20 +116,20 @@ for i in range(1,11):
     
         #This is the code for the power
     if min_power is not ' ' or max_power is not ' ':
-        min_power = float(min_power)
-        max_power = float(max_power)
+        min_power = int(min_power)
+        max_power = int(max_power)
         if min_power <= max_power:
             power = random.randint(min_power,max_power)
         else:
             print('Invalid power level range. Setting power level to random value.')
             power = random.randint()
     elif min_power is not ' ' and power is ' ':
-        min_power = float(min_power)
-        max_power = float(max_power)
+        min_power = int(min_power)
+        max_power = int(max_power)
         power = random.randint(min_power, )
     elif max_power is ' ' and max_power is not ' ':
-        min_power = float(max_power)
-        max_power = float(max_power)
+        min_power = int(max_power)
+        max_power = int(max_power)
         power = random.randint(0,max_power)
     else:
         power = random.randint()
