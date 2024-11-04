@@ -1,6 +1,8 @@
 import random
+# This is the intro
 print('Welcome to Alien NPC Generator')
 print('\n')
+# This is the variable setup
 name = ''
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 vowels = ['a','e','i','o','u','y']
@@ -20,8 +22,8 @@ min_power = input('Enter a minimum power level here (leave blank for a random mi
 max_power = input('Enter a maximum power level here (leave blank for a random maximum power level): ')
 power = 0
 
+# This is the code for the name
 for i in range(1,11):
-    # This is the code for the name
     name = ''
     if first_letter is not ' ' or last_letter is not ' ':
         name += first_letter
@@ -49,8 +51,8 @@ for i in range(1,11):
             random.choice(vowels)
             random.choice(consonants)
     print(f'Name: {name.capitalize()}')
-    # This is the code for the age
     
+    # This is the code for the age
     if min_age is not ' ' or max_age is not ' ':
         min_age = float(min_age)
         max_age = float(max_age)
@@ -72,7 +74,6 @@ for i in range(1,11):
     print(f'Age (years): {age}')
     
     # This is the code for the stamina
-    
     if min_stamina is not ' ' or max_stamina is not ' ':
         min_stamina = int(min_stamina)
         max_stamina = int(max_stamina)
@@ -114,7 +115,7 @@ for i in range(1,11):
         health = random.randint()
     print(f'Health: {health}')
     
-        #This is the code for the power
+    #This is the code for the power
     if min_power is not ' ' or max_power is not ' ':
         min_power = int(min_power)
         max_power = int(max_power)
