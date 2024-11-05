@@ -81,12 +81,12 @@ for i in range(1,11):
             stamina = random.randint()
     elif min_stamina is not '' and max_stamina is '':
         min_stamina = int(min_stamina)
-        stamina = random.randint(min_stamina, )
+        stamina = random.randint(min_stamina, 10000000001)
     elif min_stamina is '' and max_stamina is not '':
         max_stamina = int(max_stamina)
         stamina = random.randint(0,max_stamina)
     else:
-        stamina = random.randint(1,10000000001)
+        stamina = random.randint(0,10000000001)
     print(f'Stamina Level: {stamina}')
     
     #This is the code for the health
@@ -105,7 +105,7 @@ for i in range(1,11):
         max_health = int(max_health)
         health = random.randint(0,max_health)
     else:
-        health = random.randint(1,10000000001)
+        health = random.randint(0,10000000001)
     print(f'Health: {health}')
     
         #This is the code for the power
@@ -119,12 +119,12 @@ for i in range(1,11):
             power = random.randint()
     elif min_power is not '' and power is '':
         min_power = int(min_power)
-        power = random.randint(min_power, )
+        power = random.randint(min_power,10000000001)
     elif max_power is '' and max_power is not '':
         max_power = int(max_power)
         power = random.randint(0,max_power)
     else:
-        power = random.randint(1,10000000001)
+        power = random.randint(0,10000000001)
     print(f'Power: {power}')
     print('\n')
     
