@@ -1,10 +1,6 @@
 import random
-
-# This is the intro
 print('Welcome to Alien NPC Generator')
 print('\n')
-
-# This is the variable setup
 name = ''
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 vowels = ['a','e','i','o','u','y']
@@ -24,8 +20,8 @@ min_power = input('Enter a minimum power level here (leave blank for a random mi
 max_power = input('Enter a maximum power level here (leave blank for a random maximum power level): ')
 power = 0
 
-# This is the code for the name
 for i in range(1,11):
+    # This is the code for the name
     name = ''
     if first_letter is not ' ' or last_letter is not ' ':
         name += first_letter
@@ -53,9 +49,9 @@ for i in range(1,11):
             random.choice(vowels)
             random.choice(consonants)
     print(f'Name: {name.capitalize()}')
-    
     # This is the code for the age
-    if min_age is not ' ' or max_age is not ' ':
+    
+    if min_age is not '' or max_age is not '':
         min_age = float(min_age)
         max_age = float(max_age)
         if min_age <= max_age:
@@ -63,11 +59,11 @@ for i in range(1,11):
         else:
             print('Invalid age range. Setting age to random value.')
             age = random.random()
-    elif min_age is not ' ' and max_age is ' ':
+    elif min_age is not '' and max_age is '':
         min_age = float(min_age)
         max_age = float(max_age)
         age = random.uniform(min_age, )
-    elif min_age is ' ' and max_age is not ' ':
+    elif min_age is '' and max_age is not '':
         min_age = float(min_age)
         max_age = float(max_age)
         age = random.uniform(0,max_age)
@@ -76,7 +72,8 @@ for i in range(1,11):
     print(f'Age (years): {age}')
     
     # This is the code for the stamina
-    if min_stamina is not ' ' or max_stamina is not ' ':
+    
+    if min_stamina is not '' or max_stamina is not '':
         min_stamina = int(min_stamina)
         max_stamina = int(max_stamina)
         if min_stamina <= max_stamina:
@@ -84,20 +81,20 @@ for i in range(1,11):
         else:
             print('Invalid stamina level range. Setting stamina level to random value.')
             stamina = random.randint()
-    elif min_stamina is not ' ' and max_stamina is ' ':
+    elif min_stamina is not '' and max_stamina is '':
         min_stamina = int(min_stamina)
         max_stamina = int(max_stamina)
         stamina = random.randint(min_stamina, )
-    elif min_stamina is ' ' and max_stamina is not ' ':
+    elif min_stamina is '' and max_stamina is not '':
         min_stamina = int(min_stamina)
         max_stamina = int(max_stamina)
         stamina = random.randint(0,max_stamina)
     else:
-        stamina = random.randint()
+        stamina = random.randint(1,10000000001)
     print(f'Stamina Level: {stamina}')
     
     #This is the code for the health
-    if min_health is not ' ' or max_health is not ' ':
+    if min_health is not '' or max_health is not '':
         min_health = int(min_health)
         max_health = int(max_health)
         if min_health <= max_health:
@@ -105,20 +102,20 @@ for i in range(1,11):
         else:
             print('Invalid health range. Setting health to random value.')
             health = random.randint()
-    elif min_health is not ' ' and max_health is ' ':
+    elif min_health is not '' and max_health is '':
         min_health = int(min_health)
         max_health = int(max_health)
         health = random.randint(min_health, )
-    elif max_health is ' ' and max_health is not ' ':
+    elif max_health is '' and max_health is not '':
         min_health = int(max_health)
         max_health = int(max_health)
         health = random.randint(0,max_health)
     else:
-        health = random.randint()
+        health = random.randint(1,10000000001)
     print(f'Health: {health}')
     
-    #This is the code for the power
-    if min_power is not ' ' or max_power is not ' ':
+        #This is the code for the power
+    if min_power is not '' or max_power is not '':
         min_power = int(min_power)
         max_power = int(max_power)
         if min_power <= max_power:
@@ -126,15 +123,16 @@ for i in range(1,11):
         else:
             print('Invalid power level range. Setting power level to random value.')
             power = random.randint()
-    elif min_power is not ' ' and power is ' ':
+    elif min_power is not '' and power is '':
         min_power = int(min_power)
         max_power = int(max_power)
         power = random.randint(min_power, )
-    elif max_power is ' ' and max_power is not ' ':
+    elif max_power is '' and max_power is not '':
         min_power = int(max_power)
         max_power = int(max_power)
         power = random.randint(0,max_power)
     else:
-        power = random.randint()
+        power = random.randint(1,10000000001)
     print(f'Power: {power}')
+    print('\n')
     
