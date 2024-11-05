@@ -21,6 +21,7 @@ max_power = input('Enter a maximum power level here (leave blank for a random ma
 power = 0
 
 for i in range(1,11):
+    print('\n')
     # This is the code for the name
     name = ''
     if first_letter is not ' ' and last_letter is not ' ':
@@ -126,5 +127,4 @@ for i in range(1,11):
     else:
         power = random.randint(0,10000000001)
     print(f'Power: {power}')
-    print('\n')
     
