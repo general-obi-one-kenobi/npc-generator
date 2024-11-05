@@ -23,7 +23,7 @@ power = 0
 for i in range(1,11):
     # This is the code for the name
     name = ''
-    if first_letter is not ' ' or last_letter is not ' ':
+    if first_letter is not ' ' and last_letter is not ' ':
         name += first_letter
         for i in range(1,11):
             name += random.choice(vowels)
@@ -51,7 +51,7 @@ for i in range(1,11):
     print(f'Name: {name.capitalize()}')
     # This is the code for the age
     
-    if min_age is not '' or max_age is not '':
+    if min_age is not '' and max_age is not '':
         min_age = float(min_age)
         max_age = float(max_age)
         if min_age <= max_age:
@@ -61,10 +61,8 @@ for i in range(1,11):
             age = random.random()
     elif min_age is not '' and max_age is '':
         min_age = float(min_age)
-        max_age = float(max_age)
         age = random.uniform(min_age, )
     elif min_age is '' and max_age is not '':
-        min_age = float(min_age)
         max_age = float(max_age)
         age = random.uniform(0,max_age)
     else:
@@ -73,7 +71,7 @@ for i in range(1,11):
     
     # This is the code for the stamina
     
-    if min_stamina is not '' or max_stamina is not '':
+    if min_stamina is not '' and max_stamina is not '':
         min_stamina = int(min_stamina)
         max_stamina = int(max_stamina)
         if min_stamina <= max_stamina:
@@ -83,10 +81,8 @@ for i in range(1,11):
             stamina = random.randint()
     elif min_stamina is not '' and max_stamina is '':
         min_stamina = int(min_stamina)
-        max_stamina = int(max_stamina)
         stamina = random.randint(min_stamina, )
     elif min_stamina is '' and max_stamina is not '':
-        min_stamina = int(min_stamina)
         max_stamina = int(max_stamina)
         stamina = random.randint(0,max_stamina)
     else:
@@ -94,7 +90,7 @@ for i in range(1,11):
     print(f'Stamina Level: {stamina}')
     
     #This is the code for the health
-    if min_health is not '' or max_health is not '':
+    if min_health is not '' and max_health is not '':
         min_health = int(min_health)
         max_health = int(max_health)
         if min_health <= max_health:
@@ -104,10 +100,8 @@ for i in range(1,11):
             health = random.randint()
     elif min_health is not '' and max_health is '':
         min_health = int(min_health)
-        max_health = int(max_health)
         health = random.randint(min_health, )
     elif max_health is '' and max_health is not '':
-        min_health = int(max_health)
         max_health = int(max_health)
         health = random.randint(0,max_health)
     else:
@@ -115,7 +109,7 @@ for i in range(1,11):
     print(f'Health: {health}')
     
         #This is the code for the power
-    if min_power is not '' or max_power is not '':
+    if min_power is not '' and max_power is not '':
         min_power = int(min_power)
         max_power = int(max_power)
         if min_power <= max_power:
@@ -125,10 +119,8 @@ for i in range(1,11):
             power = random.randint()
     elif min_power is not '' and power is '':
         min_power = int(min_power)
-        max_power = int(max_power)
         power = random.randint(min_power, )
     elif max_power is '' and max_power is not '':
-        min_power = int(max_power)
         max_power = int(max_power)
         power = random.randint(0,max_power)
     else:
